@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hanna Biju | Writer and competition winner</title>
+<meta name="description" content="Portfolio of Hanna Biju: competition wins, award-winning writing, experience and achievements.">
+<meta name="theme-color" content="#2B4BFF">
+<meta property="og:title" content="Hanna Biju | Writer and competition winner">
+<meta property="og:description" content="Competition wins, writing, experience and achievements.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Literata:ital,opsz,wght@0,7..72,400..700;1,7..72,400..700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#FF3E8E; --orange:#FF8B1F; --blue:#2B4BFF; --ink:#17133D; --paper:#F7F4FF;
+  --pink-soft:#FFD3E6; --blue-soft:#D4DEFF; --orange-soft:#FFDDB8;
+  --ui:'Bricolage Grotesque',system-ui,sans-serif; --read:'Literata',Georgia,serif;
+  --shadow:5px 5px 0 var(--ink);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--read);font-size:1.0625rem;line-height:1.65;overflow-x:hidden}
+h1,h2,h3,p{margin:0}
+a{color:inherit}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px #fff}
+.wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 20px}
+.ph{border-bottom:2px dashed currentColor}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:20;padding:12px 0}
+.nav-in{display:flex;align-items:center;gap:8px;max-width:1120px;margin:0 20px;padding:8px 10px;background:#fff;border:3px solid var(--ink);border-radius:999px;box-shadow:4px 4px 0 var(--ink);font-family:var(--ui);font-weight:600;overflow-x:auto}
+@media(min-width:1160px){.nav-in{margin:0 auto}}
+.logo{flex:none;display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--pink);border:3px solid var(--ink);text-decoration:none;font-weight:800;font-size:.95rem}
+.nav-links{display:flex;gap:2px;margin-left:auto}
+.nav-links a{padding:8px 14px;border-radius:999px;text-decoration:none;white-space:nowrap;font-size:.95rem}
+.nav-links a:hover{background:var(--orange-soft)}
+
+/* hero */
+.hero{background:var(--blue);color:#fff;margin-top:-76px;padding:130px 0 70px;position:relative;overflow:hidden}
+.hero-grid{display:grid;gap:40px;align-items:center}
+@media(min-width:880px){.hero-grid{grid-template-columns:1.25fr .75fr}}
+.hello{font-family:var(--ui);font-weight:600;font-size:1.25rem}
+.name{font-family:var(--ui);font-weight:800;font-size:clamp(4rem,16vw,10.5rem);line-height:.86;letter-spacing:-.03em;margin:.05em 0 .22em;text-shadow:5px 5px 0 var(--ink)}
+.name .word{display:block}
+.name .l{display:inline-block;transition:transform .18s,color .18s}
+.name .l:nth-child(odd):hover{transform:translateY(-.07em) rotate(-7deg);color:var(--pink)}
+.name .l:nth-child(even):hover{transform:translateY(-.07em) rotate(7deg);color:var(--orange)}
+.pitch{font-size:1.25rem;max-width:34rem;min-height:3.6em}
+.lens{margin-top:26px}
+.lens-label{font-family:var(--ui);font-weight:600;margin-bottom:10px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{font-family:var(--ui);font-weight:600;padding:9px 16px;border-radius:999px;border:3px solid #fff;background:transparent;color:#fff;transition:transform .15s}
+.chip:hover{transform:translateY(-2px) rotate(-1.5deg)}
+.chip[aria-pressed="true"]{background:var(--pink);color:var(--ink);border-color:var(--ink);box-shadow:3px 3px 0 var(--ink)}
+.hero-photo{position:relative;justify-self:center;width:min(100%,380px)}
+.photo{position:relative;overflow:hidden;display:grid;place-items:center;text-align:center;background:var(--pink-soft);color:var(--ink);border:3px solid var(--ink);font-family:var(--ui);font-weight:600;padding:20px}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo.has-img span{display:none}
+.blob{aspect-ratio:1/1.1;border-radius:58% 42% 55% 45%/48% 55% 45% 52%;box-shadow:9px 9px 0 var(--ink)}
+.sticker{position:absolute;font-family:var(--ui);font-weight:800;padding:8px 16px;border:3px solid var(--ink);border-radius:14px;color:var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.sticker.a{background:var(--orange);top:-10px;left:-18px;transform:rotate(-9deg)}
+.sticker.b{background:var(--pink);bottom:16px;right:-14px;transform:rotate(6deg)}
+
+/* marquee */
+.marquee{background:var(--orange);color:var(--ink);border-block:3px solid var(--ink);overflow:hidden;font-family:var(--ui);font-weight:700;font-size:1.3rem}
+.marquee-track{display:flex;width:max-content;animation:slide 32s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.marquee span{padding:12px 22px;white-space:nowrap}
+@keyframes slide{to{transform:translateX(-50%)}}
+@media(prefers-reduced-motion:reduce){.marquee-track{animation:none}.marquee{overflow-x:auto}}
+
+/* sections */
+section{padding:84px 0}
+.head{margin-bottom:34px;max-width:40rem}
+.head h2{font-family:var(--ui);font-weight:800;font-size:clamp(2.2rem,6vw,3.8rem);line-height:1;letter-spacing:-.02em;margin-bottom:12px}
+.head p{font-size:1.1rem}
+
+/* about */
+.about-grid{display:grid;gap:36px;align-items:center}
+@media(min-width:760px){.about-grid{grid-template-columns:.8fr 1.2fr}}
+.about .photo{aspect-ratio:4/5;border-radius:28px 90px 28px 90px;box-shadow:8px 8px 0 var(--pink);background:var(--blue-soft);max-width:380px;width:100%}
+.about-text p+p{margin-top:1em}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px;list-style:none;padding:0}
+.facts li{font-family:var(--ui);font-weight:600;padding:8px 16px;border:3px solid var(--ink);border-radius:999px;background:var(--orange-soft)}
+
+/* wins */
+.wins{background:var(--pink)}
+.win-grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.win{background:var(--c,#fff);border:3px solid var(--ink);border-radius:22px;box-shadow:var(--shadow)}
+.win:nth-child(4n+1){--c:#fff}.win:nth-child(4n+2){--c:var(--blue-soft)}.win:nth-child(4n+3){--c:var(--orange-soft)}.win:nth-child(4n+4){--c:var(--paper)}
+.win:nth-child(odd){transform:rotate(-.6deg)}.win:nth-child(even){transform:rotate(.6deg)}
+.win.feature{grid-column:1/-1}
+.win-btn{display:grid;gap:4px;width:100%;text-align:left;background:none;border:0;padding:22px 56px 22px 22px;position:relative;border-radius:22px}
+.win-place{font-family:var(--ui);font-weight:800;font-size:1.05rem;color:var(--ink);background:var(--pink);border:3px solid var(--ink);border-radius:999px;padding:2px 14px;justify-self:start}
+.win-btn h3{font-family:var(--ui);font-weight:800;font-size:1.55rem;line-height:1.1;margin-top:6px}
+.win.feature h3{font-size:clamp(1.8rem,4vw,2.6rem)}
+.win-year{font-family:var(--ui);font-weight:600}
+.win-more{position:absolute;right:18px;top:20px;width:30px;height:30px;display:grid;place-items:center;border:3px solid var(--ink);border-radius:50%;background:#fff;font-family:var(--ui);font-weight:800;line-height:1;transition:transform .2s}
+.win-btn[aria-expanded="true"] .win-more{transform:rotate(45deg);background:var(--orange)}
+.win-detail{padding:0 22px 22px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;font-family:var(--ui);font-weight:600;font-size:.85rem}
+.tag{padding:2px 12px;border:2px solid var(--ink);border-radius:999px;background:#fff}
+.empty{grid-column:1/-1;font-family:var(--ui);font-weight:600;font-size:1.15rem;padding:26px;border:3px dashed var(--ink);border-radius:22px;background:rgba(255,255,255,.55)}
+
+/* writing */
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+.tab{font-family:var(--ui);font-weight:700;padding:9px 18px;border:3px solid var(--ink);border-radius:999px;background:#fff}
+.tab[aria-selected="true"]{background:var(--blue);color:#fff;box-shadow:3px 3px 0 var(--ink)}
+.reader{background:#fff;border:3px solid var(--ink);border-radius:26px;box-shadow:8px 8px 0 var(--blue);padding:clamp(22px,5vw,52px)}
+.reader h3{font-family:var(--ui);font-weight:800;font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.1}
+.reader .meta{font-family:var(--ui);font-weight:700;margin:10px 0 22px}
+.reader .meta b{background:var(--pink);border:3px solid var(--ink);border-radius:999px;padding:2px 14px;margin-right:8px}
+.reader blockquote{margin:0;max-width:38rem;font-size:1.2rem;line-height:1.8;font-style:italic;border-left:6px solid var(--orange);padding-left:20px}
+.btn{display:inline-block;margin-top:24px;font-family:var(--ui);font-weight:800;padding:12px 24px;border:3px solid var(--ink);border-radius:999px;background:var(--orange);color:var(--ink);text-decoration:none;box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+
+/* experience */
+.experience{background:var(--orange)}
+.timeline{list-style:none;margin:0;padding:0 0 0 30px;border-left:4px solid var(--ink);display:grid;gap:22px}
+.xp{position:relative}
+.xp::before{content:"";position:absolute;left:-43px;top:26px;width:20px;height:20px;border-radius:50%;background:var(--pink);border:4px solid var(--ink)}
+.xp-card{background:#fff;border:3px solid var(--ink);border-radius:22px;box-shadow:var(--shadow);padding:22px}
+.xp-when{font-family:var(--ui);font-weight:700}
+.xp-card h3{font-family:var(--ui);font-weight:800;font-size:1.5rem;line-height:1.15}
+.xp-org{font-family:var(--ui);font-weight:600;margin-bottom:8px}
+
+/* achievements */
+.achievements{background:var(--blue);color:#fff}
+.achievements .head p{color:#fff}
+.badges{list-style:none;margin:0;padding:0;display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.badge{width:100%;height:100%;display:grid;gap:4px;justify-items:center;text-align:center;padding:24px 16px;background:var(--c,var(--pink-soft));color:var(--ink);border:3px solid var(--ink);border-radius:30px;box-shadow:var(--shadow);transition:transform .2s}
+.badges li:nth-child(3n+1) .badge{--c:var(--pink-soft)}.badges li:nth-child(3n+2) .badge{--c:var(--orange-soft)}.badges li:nth-child(3n+3) .badge{--c:#fff}
+.badge:hover{transform:rotate(-3deg) scale(1.03)}
+.badge.spin{animation:spin .6s}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.badge.spin{animation:none}.badge:hover{transform:none}}
+.badge-icon{font-size:2rem;line-height:1;width:58px;height:58px;display:grid;place-items:center;border-radius:50%;background:var(--pink);border:3px solid var(--ink)}
+.badge-title{font-family:var(--ui);font-weight:800;font-size:1.15rem;line-height:1.2;margin-top:6px}
+.badge-sub{font-family:var(--ui);font-weight:500;font-size:.95rem}
+
+/* contact */
+.contact{background:var(--pink-soft)}
+.contact-box{display:grid;gap:30px;background:#fff;border:3px solid var(--ink);border-radius:32px;box-shadow:10px 10px 0 var(--ink);padding:clamp(24px,5vw,56px)}
+.contact h2{font-family:var(--ui);font-weight:800;font-size:clamp(2.6rem,9vw,6rem);line-height:.95;letter-spacing:-.03em}
+.contact-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.contact-actions .btn{margin:0}
+.btn.blue{background:var(--blue);color:#fff}
+.links{display:flex;flex-wrap:wrap;gap:10px 22px;list-style:none;margin:0;padding:0;font-family:var(--ui);font-weight:700}
+.links a{text-decoration-thickness:3px;text-underline-offset:4px;text-decoration-color:var(--pink)}
+.links a:hover{text-decoration-color:var(--blue)}
+.note{font-family:var(--ui);font-weight:600;min-height:1.6em}
+footer{padding:30px 0 50px;font-family:var(--ui);font-weight:600;text-align:center}
+#confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+<header class="nav">
+  <div class="nav-in">
+    <a class="logo" href="#top" aria-label="Back to top">HB</a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#about">About</a><a href="#wins">Wins</a><a href="#writing">Writing</a><a href="#experience">Experience</a><a href="#achievements">Achievements</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hello">Hi, I'm</p>
+      <h1 class="name" id="name" aria-label="Hanna Biju"></h1>
+      <p class="pitch" id="pitch" aria-live="polite"></p>
+      <div class="lens">
+        <p class="lens-label" id="lens-label">See my work through the lens of</p>
+        <div class="chips" id="chips" role="group" aria-labelledby="lens-label"></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo blob" data-photo="images/hanna-hero.jpg" data-alt="Hanna Biju"><span>Your photo goes here</span></div>
+      <span class="sticker a">Writer</span>
+      <span class="sticker b">Competition winner</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee"></div></div>
+
+<section id="about" class="about">
+  <div class="wrap about-grid">
+    <div class="photo" data-photo="images/hanna-about.jpg" data-alt="Hanna Biju smiling"><span>A second photo fits here</span></div>
+    <div class="about-text">
+      <div class="head"><h2>About me</h2></div>
+      <p><span class="ph">[Two or three sentences about who you are and what drives you.]</span></p>
+      <p><span class="ph">[One sentence on what you are looking for next.]</span></p>
+      <ul class="facts">
+        <li><span class="ph">[Fact one]</span></li><li><span class="ph">[Fact two]</span></li><li><span class="ph">[Fact three]</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="wins" class="wins">
+  <div class="wrap">
+    <div class="head"><h2>Competition wins</h2><p id="wins-lead">Tap a win to see the story behind it.</p></div>
+    <div class="win-grid" id="wins-grid"></div>
+  </div>
+</section>
+
+<section id="writing">
+  <div class="wrap">
+    <div class="head"><h2>My writing</h2><p>Pick a piece to read an extract.</p></div>
+    <div class="tabs" id="tabs" role="tablist" aria-label="Writing pieces"></div>
+    <div class="reader" id="reader" role="tabpanel" tabindex="0"></div>
+  </div>
+</section>
+
+<section id="experience" class="experience">
+  <div class="wrap">
+    <div class="head"><h2>Experience</h2><p id="xp-lead">Where I've worked, volunteered and learned.</p></div>
+    <ol class="timeline" id="timeline"></ol>
+  </div>
+</section>
+
+<section id="achievements" class="achievements">
+  <div class="wrap">
+    <div class="head"><h2>Achievements</h2><p>Give a badge a tap.</p></div>
+    <ul class="badges" id="badges"></ul>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="contact-box">
+      <h2>Let's talk.</h2>
+      <p>Hiring, mentoring or just want to say hello? I'd love to hear from you.</p>
+      <div class="contact-actions">
+        <button type="button" class="btn blue" id="copy">Copy my email</button>
+        <a class="btn" id="mail" href="#">Send an email</a>
+        <a class="btn" href="cv.pdf" download>Download my CV</a>
+      </div>
+      <p class="note" id="note" role="status"></p>
+      <ul class="links" id="links"></ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">&copy; <span id="year"></span> Hanna Biju</div></footer>
+<canvas id="confetti" aria-hidden="true"></canvas>
+
+<script>
+/* ============ EDIT YOUR CONTENT HERE ============
+   Anything in [square brackets] is placeholder text. Replace it with your own. */
+const CONFIG = {
+  email: 'your.email@example.com',
+  links: [
+    { label: 'LinkedIn', href: '#' },
+    { label: 'Instagram', href: '#' }
+  ]
+};
+const ROLES = [
+  { id: 'all', label: 'Everything', pitch: 'Writer and competition winner. [Add your one-line pitch here.]' },
+  { id: 'motorsport', label: 'Motorsport and data', pitch: '[One line on why you suit project management and data analysis.]' },
+  { id: 'aviation', label: 'Aviation management', pitch: '[One line on why you suit aviation management.]' },
+  { id: 'journalism', label: 'Journalism', pitch: '[One line on why you suit journalism.]' },
+  { id: 'vet', label: 'Veterinary medicine', pitch: '[One line on why you suit veterinary medicine.]' }
+];
+const WINS = [
+  { title: '[Writing competition name]', place: '[1st place]', year: '[Year]', detail: '[What the competition was, how many entered, and what you wrote. Two or three sentences.]', tags: ['journalism'] },
+  { title: '[Second competition name]', place: '[Winner]', year: '[Year]', detail: '[A short story about this win.]', tags: ['journalism'] },
+  { title: '[Competition name]', place: '[Finalist]', year: '[Year]', detail: '[A short story about this win.]', tags: ['motorsport'] },
+  { title: '[Competition name]', place: '[Award]', year: '[Year]', detail: '[A short story about this win.]', tags: ['aviation'] },
+  { title: '[Competition name]', place: '[Award]', year: '[Year]', detail: '[A short story about this win.]', tags: ['vet'] }
+];
+const WRITING = [
+  { title: '[Title of your piece]', result: '[1st place]', event: '[Competition name, year]', excerpt: '[Paste your opening paragraph or a favourite passage here.]', href: '#' },
+  { title: '[Title of your second piece]', result: '[Winner]', event: '[Competition name, year]', excerpt: '[Paste a short extract here.]', href: '#' },
+  { title: '[Title of your third piece]', result: '[Shortlisted]', event: '[Competition name, year]', excerpt: '[Paste a short extract here.]', href: '#' }
+];
+const EXPERIENCE = [
+  { when: '[Dates]', role: '[Your role]', org: '[Organisation]', text: '[What you did and what you achieved. Two sentences.]', tags: ['motorsport'] },
+  { when: '[Dates]', role: '[Your role]', org: '[Organisation]', text: '[What you did and what you achieved.]', tags: ['aviation'] },
+  { when: '[Dates]', role: '[Your role]', org: '[Organisation]', text: '[What you did and what you achieved.]', tags: ['journalism'] },
+  { when: '[Dates]', role: '[Your role]', org: '[Organisation]', text: '[What you did and what you achieved.]', tags: ['vet'] }
+];
+const ACHIEVEMENTS = [
+  { icon: '★', title: '[Achievement]', sub: '[Year or detail]', tags: ['journalism'] },
+  { icon: '✎', title: '[Achievement]', sub: '[Year or detail]', tags: ['journalism'] },
+  { icon: '✈', title: '[Achievement]', sub: '[Year or detail]', tags: ['aviation'] },
+  { icon: '⚑', title: '[Achievement]', sub: '[Year or detail]', tags: ['motorsport'] },
+  { icon: '♥', title: '[Achievement]', sub: '[Year or detail]', tags: ['vet'] },
+  { icon: '✦', title: '[Achievement]', sub: '[Year or detail]', tags: ['motorsport','aviation'] }
+];
+/* ============ END OF CONTENT ============ */
+
+const $ = id => document.getElementById(id);
+const state = { role: 'all', piece: 0 };
+const label = id => (ROLES.find(r => r.id === id) || {}).label || id;
+const matches = item => state.role === 'all' || item.tags.includes(state.role);
+const ph = s => String(s).replace(/(\[[^\]]*\])/g, '<span class="ph">$1</span>');
+const tagHtml = tags => `<p class="tags">${tags.map(t => `<span class="tag">${label(t)}</span>`).join('')}</p>`;
+const emptyHtml = '<p class="empty">Nothing here is tagged for this path yet. Pick another path, or choose Everything to see it all.</p>';
+
+/* name with hoverable letters */
+$('name').innerHTML = ['Hanna','Biju'].map(w =>
+  `<span class="word" aria-hidden="true">${[...w].map(c => `<span class="l">${c}</span>`).join('')}</span>`).join('');
+
+/* photos: drop a file into /images with the matching name and it appears */
+document.querySelectorAll('[data-photo]').forEach(el => {
+  const img = new Image();
+  img.onload = () => { img.alt = el.dataset.alt || ''; el.appendChild(img); el.classList.add('has-img'); };
+  img.src = el.dataset.photo;
+});
+
+/* confetti */
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const cv = $('confetti'), ctx = cv.getContext('2d'), dpr = window.devicePixelRatio || 1;
+let parts = [], running = false;
+function fit(){ cv.width = innerWidth * dpr; cv.height = innerHeight * dpr; }
+addEventListener('resize', fit); fit();
+function burst(x, y){
+  if (reduce) return;
+  const cols = ['#FF3E8E','#FF8B1F','#2B4BFF','#FFFFFF','#17133D'];
+  for (let i = 0; i < 46; i++) parts.push({ x: x*dpr, y: y*dpr, vx: (Math.random()-.5)*14*dpr, vy: (-Math.random()*12-4)*dpr, s: (6+Math.random()*7)*dpr, r: Math.random()*6.28, vr: (Math.random()-.5)*.4, c: cols[i % cols.length], life: 1 });
+  if (!running){ running = true; requestAnimationFrame(tick); }
+}
+function tick(){
+  ctx.clearRect(0, 0, cv.width, cv.height);
+  parts = parts.filter(p => p.life > 0);
+  parts.forEach(p => {
+    p.vy += .45*dpr; p.x += p.vx; p.y += p.vy; p.r += p.vr; p.life -= .016;
+    ctx.save(); ctx.globalAlpha = Math.max(p.life, 0); ctx.translate(p.x, p.y); ctx.rotate(p.r);
+    ctx.fillStyle = p.c; ctx.fillRect(-p.s/2, -p.s/3, p.s, p.s*.66); ctx.restore();
+  });
+  if (parts.length) requestAnimationFrame(tick); else { running = false; ctx.clearRect(0, 0, cv.width, cv.height); }
+}
+const burstFrom = el => { const b = el.getBoundingClientRect(); burst(b.left + b.width/2, b.top + b.height/2); };
+
+/* marquee of wins */
+const mq = WINS.map(w => `<span>${w.title} ✦ ${w.place}</span>`).join('');
+$('marquee').innerHTML = mq + mq;
+
+/* path chips + pitch */
+function renderChips(){
+  $('chips').innerHTML = ROLES.map(r => `<button type="button" class="chip" data-role="${r.id}" aria-pressed="${r.id === state.role}">${r.label}</button>`).join('');
+  $('pitch').innerHTML = ph(ROLES.find(r => r.id === state.role).pitch);
+}
+$('chips').addEventListener('click', e => {
+  const b = e.target.closest('.chip'); if (!b) return;
+  state.role = b.dataset.role; renderAll();
+  const again = document.querySelector(`.chip[data-role="${state.role}"]`); if (again) again.focus();
+});
+
+/* wins */
+function renderWins(){
+  const list = WINS.filter(matches);
+  $('wins-grid').innerHTML = list.length ? list.map((w, i) => `
+    <article class="win${i === 0 && state.role === 'all' ? ' feature' : ''}">
+      <button type="button" class="win-btn" aria-expanded="false" aria-controls="win-d-${i}">
+        <span class="win-place">${ph(w.place)}</span>
+        <h3>${ph(w.title)}</h3>
+        <span class="win-year">${ph(w.year)}</span>
+        <span class="win-more" aria-hidden="true">+</span>
+      </button>
+      <div class="win-detail" id="win-d-${i}" hidden><p>${ph(w.detail)}</p>${tagHtml(w.tags)}</div>
+    </article>`).join('') : emptyHtml;
+}
+$('wins-grid').addEventListener('click', e => {
+  const b = e.target.closest('.win-btn'); if (!b) return;
+  const open = b.getAttribute('aria-expanded') === 'true';
+  b.setAttribute('aria-expanded', String(!open));
+  $(b.getAttribute('aria-controls')).hidden = open;
+  if (!open) burstFrom(b.querySelector('.win-more'));
+});
+
+/* writing */
+function renderWriting(){
+  $('tabs').innerHTML = WRITING.map((p, i) => `<button type="button" class="tab" role="tab" id="tab-${i}" aria-selected="${i === state.piece}" aria-controls="reader" tabindex="${i === state.piece ? 0 : -1}">${ph(p.title)}</button>`).join('');
+  const p = WRITING[state.piece];
+  $('reader').setAttribute('aria-labelledby', 'tab-' + state.piece);
+  $('reader').innerHTML = `<h3>${ph(p.title)}</h3><p class="meta"><b>${ph(p.result)}</b>${ph(p.event)}</p><blockquote>${ph(p.excerpt)}</blockquote><a class="btn" href="${p.href}">Read the full piece</a>`;
+}
+$('tabs').addEventListener('click', e => {
+  const b = e.target.closest('.tab'); if (!b) return;
+  state.piece = Number(b.id.replace('tab-', '')); renderWriting(); $('tab-' + state.piece).focus();
+});
+$('tabs').addEventListener('keydown', e => {
+  if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+  const n = WRITING.length;
+  state.piece = (state.piece + (e.key === 'ArrowRight' ? 1 : n - 1)) % n;
+  renderWriting(); $('tab-' + state.piece).focus();
+});
+
+/* experience */
+function renderExperience(){
+  const list = EXPERIENCE.filter(matches);
+  $('timeline').innerHTML = list.length ? list.map(x => `
+    <li class="xp"><div class="xp-card">
+      <p class="xp-when">${ph(x.when)}</p><h3>${ph(x.role)}</h3><p class="xp-org">${ph(x.org)}</p>
+      <p>${ph(x.text)}</p>${tagHtml(x.tags)}
+    </div></li>`).join('') : `<li>${emptyHtml}</li>`;
+}
+
+/* achievements */
+function renderBadges(){
+  const list = ACHIEVEMENTS.filter(matches);
+  $('badges').innerHTML = list.length ? list.map(a => `
+    <li><button type="button" class="badge"><span class="badge-icon" aria-hidden="true">${a.icon}</span><span class="badge-title">${ph(a.title)}</span><span class="badge-sub">${ph(a.sub)}</span></button></li>`).join('') : `<li>${emptyHtml}</li>`;
+}
+$('badges').addEventListener('click', e => {
+  const b = e.target.closest('.badge'); if (!b) return;
+  b.classList.remove('spin'); void b.offsetWidth; b.classList.add('spin');
+  burstFrom(b);
+});
+
+/* contact */
+$('mail').href = 'mailto:' + CONFIG.email;
+$('links').innerHTML = CONFIG.links.map(l => `<li><a href="${l.href}" target="_blank" rel="noopener">${l.label}</a></li>`).join('');
+$('copy').addEventListener('click', async () => {
+  try { await navigator.clipboard.writeText(CONFIG.email); $('note').textContent = 'Email copied. Say hello!'; burstFrom($('copy')); }
+  catch { $('note').textContent = 'Could not copy automatically. My email is ' + CONFIG.email; }
+});
+$('year').textContent = new Date().getFullYear();
+
+function renderAll(){ renderChips(); renderWins(); renderWriting(); renderExperience(); renderBadges(); }
+renderAll();
+</script>
+</body>
+</html>
